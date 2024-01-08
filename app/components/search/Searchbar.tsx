@@ -1,12 +1,14 @@
 import React from 'react'
 type SearchbarProps = {
-    width: number;
+    width: string;
     height: number;
     background: string;
     placeholder: string;
     border: string | null;
+    textLength: number;
+    placeholderColor: string;
 }
-const Searchbar = ({ width, height, background, placeholder, border }: SearchbarProps) => {
+const Searchbar = ({ width, height, background, placeholder, border, textLength, placeholderColor }: SearchbarProps) => {
     return (
         <div className='flex flex-row items-center relative'>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" className='absolute left-[16px]'>
@@ -19,7 +21,7 @@ const Searchbar = ({ width, height, background, placeholder, border }: Searchbar
                     </clipPath>
                 </defs>
             </svg>
-            <input style={{ textIndent: "40px" }} placeholder={placeholder} className={`w-[${width}px] h-[${height}px] bg-[${background}] rounded-[6px] outline-none ${border ? 'border border-[1px] border-[#D9D9D9]' : ''}`} />
+            <input style={{ textIndent: "40px"}} placeholder={placeholder} className={`w-[${width}] h-[${height}px] bg-[${background}] rounded-[6px] outline-none ${border ? 'border border-[1px] border-[#D9D9D9]' : ''} placeholder:text-[${placeholderColor}] font-Inter font-normal text-[${textLength}px]`} />
         </div>
     )
 }
