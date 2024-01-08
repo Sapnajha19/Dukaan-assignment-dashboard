@@ -22,7 +22,7 @@ const Navbar = () => {
                     <p className='text-[12px] text-[#4D4D4D]'>How it works</p>
                 </div>
             </div>
-            <Searchbar width={400} height={40} background='#F2F2F2' placeholder='Search features, tutorials, etc.' border={null}/>
+            <Searchbar width='400px' height={40} background='#F2F2F2' placeholder='Search features, tutorials, etc.' border={null} textLength={15} placeholderColor='#808080'/>
             <div className='flex flex-row gap-[12px] items-center mr-[32px]'>
                 <div className='w-[40px] h-[40px] rounded-full bg-[#E6E6E6] flex gap-[12px] items-center justify-center'>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
