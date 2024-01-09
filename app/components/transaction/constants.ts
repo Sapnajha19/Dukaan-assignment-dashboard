@@ -4,7 +4,6 @@ export type transaction = {
     amount: string;
     fee: string;
 }
-let index=1;
 
 export const TransactionList: transaction[] = Array.from({ length: 19 }, (_, index) => ({
     id: `#${281209 + index}`,
