@@ -21,7 +21,7 @@ const Searchbar = ({ width, height, background, placeholder, border, textLength,
                     </clipPath>
                 </defs>
             </svg>
-            <input style={{ textIndent: "40px"}} placeholder={placeholder} className={`w-[${width}] h-[${height}px] bg-[${background}] rounded-[6px] outline-none ${border ? 'border border-[1px] border-[#D9D9D9]' : ''} placeholder:text-[${placeholderColor}] font-Inter font-normal text-[${textLength}px]`} />
+            <input style={{ textIndent: "40px", width: `${width}`}} placeholder={placeholder} className={`h-[${height}px] bg-[${background}] rounded-[6px] outline-none ${border ? 'border border-[1px] border-[#D9D9D9]' : ''} placeholder:text-[${placeholderColor}] font-Inter font-normal text-[${textLength}px]`} />
         </div>
     )
 }
