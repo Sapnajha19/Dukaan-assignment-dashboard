@@ -8,7 +8,7 @@ const Sidebar = () => {
     return (
         <div className='w-[224px] h-screen bg-[#1E2640] flex flex-col justify-between sticky inset-0' style={{ zIndex: "9999" }}>
             <div className='flex flex-col'>
-                <div className='flex flex-row pl-[16px] pt-[16px]'>
+                <div className='flex flex-row items-center pl-[16px] pt-[16px]'>
                     <div className='flex flex-row gap-[12px]'>
                         <Image src={BrandLogo} alt="brand-logo" height={39} width={39} />
                         <div className='flex flex-col gap-[4px] text-[#FFF] font-Inter'>
