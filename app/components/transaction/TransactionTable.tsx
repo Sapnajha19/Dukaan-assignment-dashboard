@@ -1,9 +1,10 @@
+import Pagination from "../pagination/Pagination"
 import Searchbar from "../search/Searchbar"
 import { TransactionList } from "./constants"
 
 const TransactionTable = () => {
     return (
-        <div className='w-[1152px] h-[1096px] bg-[#FFFFFF] rounded-[8px] shadow-[0px_2px_6px_0px_rgba(26,24,30,0.04)] mt-[20px]'>
+        <div className='w-full h-[1096px] bg-[#FFFFFF] rounded-[8px] shadow-[0px_2px_6px_0px_rgba(26,24,30,0.04)] mt-[20px]'>
             <div className="flex flex-row justify-between mt-[12px]">
                 <div className="ml-[12px]">
                     <Searchbar width='248px' height={40} background='#FFF' placeholder='Search by order ID...' border='#D9D9D9' textLength={14} placeholderColor='#999' />
@@ -25,7 +26,7 @@ const TransactionTable = () => {
                     </div>
                 </div>
             </div>
-            <div>
+            <div className="flex flex-col">
                 <div className="relative overflow-x-auto font-Inter mt-[12px] ml-[12px] mr-[12px]">
                     <table className="min-w-full divide-y">
                         <thead className="min-w-full bg-[#F2F2F2] rounded-[4px] text-[14px] text-[#4D4D4D] font-medium h-[40px] relative">
@@ -74,6 +75,9 @@ const TransactionTable = () => {
                             ))}
                         </tbody>
                     </table>
+                </div>
+                <div className="mx-auto mt-[24px]">
+                    <Pagination />
                 </div>
             </div>
         </div>
