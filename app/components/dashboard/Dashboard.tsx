@@ -33,8 +33,8 @@ const Dashboard = () => {
                         </div>
                     </div>
                     <div className='flex flex-row gap-[20px] mt-[24px]'>
-                        {StatisticsData.map((item) => (
-                            <div className='w-[566px] h-[118px] bg-[#FFF] shadow-[0px_2px_6px_0px_rgba(26,24,30,0.04)] rounded-[8px] flex flex-col gap-[16px] pl-[20px] pt-[20px]'>
+                        {StatisticsData.map((item, index) => (
+                            <div key={index} className='w-[566px] h-[118px] bg-[#FFF] shadow-[0px_2px_6px_0px_rgba(26,24,30,0.04)] rounded-[8px] flex flex-col gap-[16px] pl-[20px] pt-[20px]'>
                                 <p className='text-[16px] text-[#4D4D4D] font-normal'>{item.type}</p>
                                 <p className='text-[32px] text-[#1A181E] font-medium'>{item.amount}</p>
                             </div>

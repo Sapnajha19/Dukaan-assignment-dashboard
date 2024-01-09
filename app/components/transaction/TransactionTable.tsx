@@ -65,8 +65,8 @@ const TransactionTable = () => {
                             </tr>
                         </thead>
                         <tbody>
-                            {TransactionList.map((row) => (
-                                <tr className="bg-white border-b text-[14px] relative h-[48px]">
+                            {TransactionList.map((row, index) => (
+                                <tr key={index} className="bg-white border-b text-[14px] relative h-[48px]">
                                     <td scope="row" className="text-[#146EB4] font-medium pl-[12px]">{row.id}</td>
                                     <td scope="row" className="font-normal text-[#1A181E] pl-[100px]">{row.date}</td>
                                     <td scope="row" className="font-normal text-[#1A181E] pr-[110px]">{row.amount}</td>
