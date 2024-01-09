@@ -3,7 +3,7 @@ import Searchbar from '../search/Searchbar'
 
 const Navbar = () => {
     return (
-        <div className='w-full h-[64px] bg-[#FFF] border border-b border-[1px] border-[#D9D9D9] font-normal font-Inter flex flex-row items-center justify-between sticky inset-0' style={{ zIndex: "1000" }}>
+        <div className='w-full h-[64px] bg-[#FFF] border-b-[1px] border-b-[#D9D9D9] font-normal font-Inter flex flex-row items-center justify-between sticky inset-0' style={{ zIndex: "1000" }}>
             <div className='flex flex-row items-center gap-[16px] ml-[32px]'>
                 <p className='text-[15px] text-[#1A181E]'>Payments</p>
                 <div className='flex flex-row items-center gap-[6px]'>
