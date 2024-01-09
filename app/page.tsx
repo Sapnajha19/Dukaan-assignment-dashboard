@@ -1,8 +1,12 @@
+import Image from 'next/image'
+import Sidebar from './components/sidebar/Sidebar'
+import Navbar from './components/navigation/Navbar'
+import Dashboard from './components/dashboard/Dashboard'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      
-    </main>
+    <div>
+    <Dashboard/>
+  </div>
   )
 }
