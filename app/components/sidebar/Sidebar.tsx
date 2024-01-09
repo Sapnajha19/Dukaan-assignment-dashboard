@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 const Sidebar = () => {
     return (
-        <div className='w-[224px] h-[765px] bg-[#1E2640] flex flex-col justify-between sticky inset-0' style={{ zIndex: "9999px" }}>
+        <div className='w-[224px] h-screen bg-[#1E2640] flex flex-col justify-between sticky inset-0' style={{ zIndex: "9999" }}>
             <div className='flex flex-col'>
                 <div className='flex flex-row pl-[16px] pt-[16px]'>
                     <div className='flex flex-row gap-[12px]'>
